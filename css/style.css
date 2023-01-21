@@ -76,7 +76,7 @@ p {
 }
 
 .bgimg-3 {
-    background-image: url("../images/image3.jpg");
+    background-image: url("../images/seoul.mp4");
     opacity: 1;
     height: 1000px;
 }
@@ -109,7 +109,7 @@ a {
     position: absolute;
     z-index: 1000;
     top: 600px;
-    left: 400px;
+    left: 360px;
     font-size: 20px;
 }
 
@@ -118,4 +118,30 @@ a {
     z-index: 1000;
     top: 1600px;
     left: 650px;
+}
+
+/*
+https://cdn.pixabay.com/vimeo/323496013/Seoul%20-%2021985.mp4?width=1280&expiry=1674241607&hash=267c9e61954a66e665c3788d8ccedf162603550c
+*/
+
+video {
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+.video-container {
+    height: 600px;
+}
+
+.video-parallax {
+    -webkit-transition-position: fixed;
+    position: fixed;
 }
