@@ -38,6 +38,30 @@ p {
     width: 1.7%;
 }
 
+.facebooksocialmediaiconposition {
+    position: absolute;
+    z-index: 1000;
+    top: 415px;
+    left: 655px;
+    width: 1.7%;
+}
+
+.twittersocialmediaiconposition {
+    position: absolute;
+    z-index: 1000;
+    top: 415px;
+    left: 685px;
+    width: 1.7%;
+}
+
+.youtubesocialmediaiconposition {
+    position: absolute;
+    z-index: 1000;
+    top: 415px;
+    left: 715px;
+    width: 1.7%;
+}
+
 .socialmediaiconsize {
     display: block;
     margin: 0 auto;
@@ -79,6 +103,35 @@ p {
     background-image: url("../images/seoul.mp4");
     opacity: 1;
     height: 1000px;
+
+}
+
+#background-video {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    position: relative;
+    left: 400;
+    right: 0;
+    top: 50;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+@keyframes backgroundvideofadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeinbackgroundvideo {
+    animation-name: backgroundvideofadein;
+    animation: backgroundvideofadein 3s;
 }
 
 .smallspace {
@@ -144,5 +197,51 @@ video {
 
 .video-parallax {
     -webkit-transition-position: fixed;
-    position: fixed;
+    position: relative;
+}
+
+.typewriter p {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    /* Cursor */
+    white-space: nowrap;
+    /* Keeps text on one line*/
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+/* Typewriter animation */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* cursor animation */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+
+.footer {
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: black;
 }
