@@ -159,6 +159,20 @@ a {
     color: white;
 }
 
+.hometexttop {
+    position: absolute;
+    z-index: 1000;
+    top: 400px;
+    left: 650px;
+}
+
+.toplist1 {
+    position: absolute;
+    z-index: 1000;
+    top: 40px;
+    left: 400px;
+}
+
 .hometext {
     position: absolute;
     z-index: 1000;
@@ -211,7 +225,7 @@ a {
 .hometext6 {
     position: absolute;
     z-index: 1000;
-    top: 3925px;
+    top: 4000px;
     left: 100px;
     font-size: 27px;
     text-align: left;
@@ -222,7 +236,7 @@ a {
 .hometext7 {
     position: absolute;
     z-index: 1000;
-    top: 3925px;
+    top: 4000px;
     left: 800px;
     font-size: 27px;
     text-align: left;
@@ -372,7 +386,7 @@ a {
 .bgimg2header {
     position: absolute;
     z-index: 1000;
-    top: 3700px;
+    top: 3800px;
     left: 290px;
     inline-size: 1000px;
     font-size: 32px;
