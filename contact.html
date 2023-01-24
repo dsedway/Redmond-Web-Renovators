@@ -11,31 +11,112 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/vbf8nix.css">
     <style>
         h1 {
             color: white;
-            text-align: center
+            text-align: center;
+        }
+        
+        h3 {
+            text-align: center;
+            font-family: "ofelia-text", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        h4 {
+            text-align: center;
+            font-family: "ofelia-text", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: rgb(63, 63, 120);
+            font-size: 20px;
+        }
+        
+        h6 {
+            text-align: center;
+            font-family: "ofelia-text", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 14px;
+        }
+        
+        a {
+            text-align: center;
+            font-family: "ofelia-text", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 14px;
+            color: rgb(63, 63, 120)
+        }
+        
+        h2 {
+            font-family: "ofelia-text", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+        
+        h1 {
+            color: hsl(0, 0%, 28%);
+            font-size: 50px;
+            font-weight: bold;
+            font-family: monospace;
+            letter-spacing: 7px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        
+        h1 {
+            padding: 30px;
+            background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 0%) 20%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 3s infinite linear;
+        }
+        
+        @keyframes shine {
+            0% {
+                background-position: 0;
+            }
+            25% {
+                background-position: 300px;
+            }
+            50% {
+                background-position: 400px;
+            }
+            100% {
+                background-position: 900px;
+            }
         }
         
         p {
             color: black;
+            font-family: "ofelia-text", sans-serif;
+            font-weight: 700;
+            font-style: normal;
         }
         
         body {
-            background: url('/images/sky.webp') no-repeat center center fixed white;
             background-size: cover;
-            background-color: rgb(26, 26, 28);
-            height: 750px;
+            background: url('../images/mapcontactmain.png ') no-repeat center center fixed white;
+            background-color: rgb(255, 255, 255);
+            background-size: 1270px;
         }
         
         .container {
-            background-color: aliceblue;
-            width: 900px;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+            margin: 50px;
         }
         
         .container2 {
-            width: 900px;
-            margin: auto
+            border-radius: 5px;
+            background-color: #618fb4;
+            padding: 20px;
+            text-align: center;
         }
         
         .container3 {
@@ -51,6 +132,65 @@
             margin: left;
             border-radius: 20px;
             padding: 15px;
+        }
+        /* Create three equal columns that floats next to each other */
+        
+        .column {
+            float: left;
+            width: 31%;
+            padding: 10px;
+            border: hsl(0, 0%, 30%) thin solid;
+            margin: 5px;
+            /* Should be removed. Only for demonstration */
+        }
+        /* Clear floats after the columns */
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        
+        input[type=submit] {
+            background-color: rgb(63, 63, 120);
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        
+        .column2 {
+            float: left;
+            width: 45%;
+            padding: 10px;
+            height: auto;
+            margin: 20px;
         }
     </style>
 </head>
@@ -91,10 +231,7 @@
                         <a class="nav-link text-white" href="#">Contact</a>
                     </li>
                 </ul>
-                <!--test<form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-light" type="submit">Search</button>
-                </form>-->
+
             </div>
         </div>
     </nav>
@@ -102,57 +239,110 @@
     <div>
         <h1>Contact Us</h1>
         <div>
-            <div class="container2">
 
-                <h2>Get in touch</h2>
-                <h6>It is very important for us to keep in touch with you, so we are always ready to answer any question that interests you. Shoot!</h6>
-                <br>
 
-            </div>
+
+            <h6 style="text-align:center; color:white">It is very important for us to keep in touch with you, so we are always ready to answer any question that interests you. Shoot!</h6>
+            <br>
+
+
             <div class="container">
 
 
                 <h5></h5>
                 <div class="row">
-                    <div class="col-md-8" style="color:rgb(63, 63, 120)">
-                        <br>
-                        <h5>Come meet us! <img src="images/paperplane.png" width="40px"></h5>
+                    <div class="col-sm" style="color:rgb(63, 63, 120)">
 
-                        <img src="images/map.png" width="500px" border-radius="15px">
+                        <h2 style="text-align:center">Get in Touch</h2>
+                        <h4 style="text-align:center">Let's talk</h4>
+
+
                         <br>
-                        <br>
-                        <div class="container3">
-                            <h6>Address: 15946 Redmond Way, <br> Suite 106 Redmond,<br> WA 98052 </h6>
-                            <a href="https://www.google.com/maps?q=Redmond+Way+Dentistry+15946+Redmond+Way,+Suite+106,++Redmond,+WA+98052&hl=en&sll=47.272986,-120.882277&sspn=5.188607,13.381348&t=h&hq=Redmond+Way+Dentistry&hnear=15946+Redmond+Way+%23106,+Redmond,+Washington+98052&z=16">Directions</a>
-                            <br>
+                        <div class="row">
+                            <div class="column">
+                                <h3>ADDRESS</h3>
+                                <h6>Address: 15946 Redmond Way, <br> Suite 106 Redmond,<br> WA 98052 </h6>
+                                <a href="https://www.google.com/maps?q=Redmond+Way+Dentistry+15946+Redmond+Way,+Suite+106,++Redmond,+WA+98052&hl=en&sll=47.272986,-120.882277&sspn=5.188607,13.381348&t=h&hq=Redmond+Way+Dentistry&hnear=15946+Redmond+Way+%23106,+Redmond,+Washington+98052&z=16">Directions</a>
+
+                            </div>
+                            <div class="column">
+                                <h3>EMAIL & PHONE</h3>
+                                <h6><img src="images/emailicon.png" width="60px">Email us:</h6>
+                                <a href="mailto:office@redmondwaydentistry.com">office@redmondwaydentistry.com</a>
+
+
+                            </div>
+                            <div class="column">
+                                <h3>OFFICE HOURS</h3>
+                                <h6>Monday-Saturday</h6>
+                                <h6>by appointment</h6>
+                            </div>
                         </div>
-                        <br>
-
 
 
                     </div>
 
-                    <div class=" col-md-4 " style="background-color:rgb(63, 63, 120); color:aliceblue "><br>
-                        <h5>Contact Information:</h5>
-                        <br>
-                        <div class="container4">
-
-                            <h6> <img src="images/phoneicon.png" width="40px"> Call us! (425)-898-2168</h6>
 
 
+
+                </div>
+            </div>
+            <div><br>
+                <div class="container2" style="height: 700px; color:white">
+
+                    <br>
+
+                    <h2>Contact Form</h2>
+
+                    <div>
+                        <div class="row">
+                            <div class="column2">
+                                <h2 style="text-align: left; margin:20px">Message Us</h2>
+                                <p style="text-align: left;color:white; margin:20px">Our help center is always fresh and open for hearing feedback. We would love to know about your inquiries with our dentistry. If you can't find the answer on our website, let us provide a helping hand. </p>
+                            </div>
+                            <div class="column2">
+                                <form>
+                                    <label for="fname">First Name</label>
+                                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                                    <label for="lname">Last Name</label>
+                                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                                    <label for="country">Country</label>
+                                    <select id="country" name="country">
+                                          <option value="australia">Australia</option>
+                                          <option value="canada">Canada</option>
+                                          <option value="usa">USA</option>
+                                    </select>
+
+                                    <label for="subject">Subject</label>
+                                    <textarea id="subject" name="subject" placeholder="Thanks!" style="height:200px"></textarea>
+
+                                    <input type="submit" value="Submit">
+
+                                </form>
+                                <br>
+                            </div>
                         </div>
 
-                        <div class="container4">
-                            <h6><img src="images/emailicon.png" width="60px">Email us:</h6>
-                            <a href="mailto:office@redmondwaydentistry.com">office@redmondwaydentistry.com</a>
-                        </div>
                     </div>
+
+
+
+
+
                 </div>
             </div>
 
-
-
         </div>
+        <div style="background-color:white">
+            <br>
+            <h2 style="text-align:center">Take a look at where we are!</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d2686.4813235165434!2d-122.130393049198!3d47.67507169113726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x549072ada346c2f1%3A0x2b0c64be33b63b3e!2sRedmond%20Way%20Dentistry%2C%2015946%20Redmond%20Way%20%23106%2C%20Redmond%2C%20WA%2098052!3m2!1d47.6749569!2d-122.12840609999999!5e0!3m2!1sen!2sus!4v1674527295076!5m2!1sen!2sus"
+                width="1275px" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </div>
 
 </body>
 
