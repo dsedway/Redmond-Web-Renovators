@@ -12,6 +12,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/vbf8nix.css">
+    <!--
+        All of the animations that I am using in this webpage are using external libraries. I received the information about these animations from MDBootstrap, their CSS Text Animations Page. I used the shine effect. I will put a comment below where exactly I used it. Additionally, I learnt how to make a form to from W3Schools. I will put a comment below where I used it. 
+    -->
     <style>
         h1 {
             color: white;
@@ -56,6 +59,7 @@
             font-weight: 700;
             font-style: normal;
         }
+        /* Here is where I used internal CSS for the shine animation. */
         
         h1 {
             color: hsl(0, 0%, 28%);
@@ -133,7 +137,7 @@
             border-radius: 20px;
             padding: 15px;
         }
-        /* Create three equal columns that floats next to each other */
+        /* To create three equal columns that floats next to each other */
         
         .column {
             float: left;
@@ -182,7 +186,7 @@
         }
         
         input[type=submit]:hover {
-            background-color: #45a049;
+            background-color: rgb(122, 122, 171);
         }
         
         .column2 {
@@ -315,25 +319,27 @@
                                 <h2 style="text-align: left; margin:20px">Message Us</h2>
                                 <p style="text-align: left;color:white; margin:20px">Our help center is always fresh and open for hearing feedback. We would love to know about your inquiries with our dentistry. If you can't find the answer on our website, let us provide a helping hand. </p>
                             </div>
+                            <!-- Here is where I used the form I learnt how to make from W3Schools-->
                             <div class="column2">
                                 <form>
                                     <label for="fname">First Name</label>
-                                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                                    <input type="text" id="fname" name="firstname" placeholder="Your first name..">
 
                                     <label for="lname">Last Name</label>
                                     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-                                    <label for="country">Country</label>
+                                    <label for="country">Your Country</label>
                                     <select id="country" name="country">
-                                          <option value="australia">Australia</option>
+                                         
                                           <option value="canada">Canada</option>
                                           <option value="usa">USA</option>
+                                          <option value="other">Other</option>
                                     </select>
 
-                                    <label for="subject">Subject</label>
-                                    <textarea id="subject" name="subject" placeholder="Thanks!" style="height:200px"></textarea>
+                                    <label for="subject">A Comment</label>
+                                    <textarea id="subject" name="subject" placeholder="..." style="height:200px"></textarea>
 
-                                    <input type="submit" value="Submit">
+                                    <input type="submit" value="Submit Form">
 
                                 </form>
                                 <br>
@@ -358,7 +364,15 @@
         </div>
 
     </div>
+    </div>
+    <footer class="bg-dark text-center text-white">
 
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-white" href="index.html">Redmond Web Renovators</a>
+        </div>
+    </footer>
 </body>
 
 </html>
