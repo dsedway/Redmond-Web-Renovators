@@ -13,13 +13,10 @@
     <link rel="stylesheet" href="css/style.css">
     <style>
         body {
-            background: url('/images/eastsidepark.jpg') no-repeat center center fixed white;
+            background: url('../images/eastsidepark.jpg') no-repeat center center fixed;
             background-size: cover;
-        }
+            /*background-color: rgb(26, 26, 28);*/
 
-        .block3 {
-            text-align: center;
-            color: white;
         }
     </style>
 </head>
@@ -30,16 +27,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Appointment</a>
+                        <a class="nav-link text-white" href="appointment.html">Appointment</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Team</a>
+                        <a class="nav-link text-white" href="meet_the_team.html">Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Tour</a>
+                        <a class="nav-link text-white" href="office_tour.html">Tour</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="insurance.html">Insurance</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -48,17 +48,26 @@
                             Services
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Services1</a></li>
-                            <li><a class="dropdown-item" href="#">Services2</a></li>
+                            <li><a class="dropdown-item" href="#">Invisalign</a></li>
+                            <li><a class="dropdown-item" href="#">Dental Implants</a></li>
+                            <li><a class="dropdown-item" href="#">Cosmetic Dental Services</a></li>
+                            <li><a class="dropdown-item" href="#">Crowns and Fillings</a></li>
+                            <li><a class="dropdown-item" href="#">Emergency Dentist</a></li>
+                            <li><a class="dropdown-item" href="#">Family Dentistry</a></li>
+                            <li><a class="dropdown-item" href="#">Night and Sports Guards</a></li>
+                            <li><a class="dropdown-item" href="#">Porcelain Veneers</a></li>
+                            <li><a class="dropdown-item" href="#">Saturday Dentist</a></li>
+                            <li><a class="dropdown-item" href="#">Teeth Whitening</a></li>
+                            <li><a class="dropdown-item" href="#">Chao Surgical Pinhole Technique</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Services3</a></li>
+                            <li><a class="dropdown-item" href="#">Learn More</a></li>
                         </ul>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Contact</a>
+                        <a class="nav-link text-white" href="contact.html">Contact</a>
                     </li>
                 </ul>
                 <!--test<form class="d-flex">
@@ -68,36 +77,105 @@
             </div>
         </div>
     </nav>
-
-    <div class="block3">
-        <h1>Dental Insurance</h1>
-        <ul>
-            <li>Delta Dental (PPO and Premier)</li>
-            <li>AARP</li>
-            <li>Aetna</li>
-            <li>Ameritas</li>
-            <li>Assurant</li>
-            <li>Cigna</li>
-            <li>Dentemax</li>
-            <li>DHA</li>
-            <li>Guardian</li>
-            <li>Humana</li>
-            <li>Kaiser Permanente</li>
-            <li>Lifemap</li>
-            <li>Lifewise</li>
-            <li>Metlife</li>
-            <li>Premera</li>
-            <li>Principal</li>
-            <li>Regence</li>
-            <li>Standard</li>
-            <li>Sunlife</li>
-            <li>United Concordia</li>
-            <li>United Healthcare</li>
-        </ul>
-        <p>If your insurance is not listed, please <a href="contact.html">Contact Our Office</a>, and we will check your
+    <div data-aos="fade-down" data-aos-offset="50" data-aos-easing="ease-in-sine" data-aos-anchor-placement="center-up">
+        <p style="text-align:center;font-size:40px; margin: 70px;">
+            <br><br>
+            Dental Insurance
+            <br>
+            Delta Dental (PPO and Premier)
+            <br>
+            AARp
+            <br>
+            Aetna
+            <br>
+            Ameritas
+            <br>
+            Assurant
+            <br>
+            Cigna
+            <br>
+            Dentemax
+            <br>
+            DHA
+            <br>
+            Guardian
+            <br>
+            Humana
+            <br>
+            Kaiser Permanente
+            <br>
+            Lifemap
+            <br>
+            Lifewise
+            <br>
+            Metlife
+            <br>
+            Premera
+            <br>
+            Principal
+            <br>
+            Regence
+            <br>
+            Standard
+            <br>
+            Sunlife
+            <br>
+            United Concordia
+            <br>
+            United Healthcare
+            <br>
+            And many more...
+            <br>
+            If your insurance is not listed, please <a href="contact.html">Contact Our Office</a>, and we will check
+            your
             benefits before your
-            appointment.</p>
+            appointment.
+            <br>
+
+
+
+
+        </p>
     </div>
+
+    <footer class="bg-dark text-center text-white">
+
+        <div class="container p-4">
+
+            <section class="mb-4">
+                <!--The point of these icons are for the user to hover over. Mostly for visual effect. Decided not to use social media icons here and put them at the top instead. -->
+
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+
+
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-github"></i></a>
+            </section>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-white" href="index.html">Redmond Web Renovators</a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>
